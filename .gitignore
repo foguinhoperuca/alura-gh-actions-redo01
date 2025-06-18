@@ -30,3 +30,14 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Course files
+pkg
+main
+postgres-data
+
+# Custom
+*#*
+*~*
+*.swp
+
