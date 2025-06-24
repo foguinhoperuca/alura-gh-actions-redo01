@@ -18,11 +18,14 @@ ci-prepare:
 	@clear
 	@date
 
-start:
-	docker compose up -d
-
 stop:
 	docker compose down
+
+start: stop
+	docker compose up -d
+
+start-db: stop
+	docker compose up -d postgres
 
 ci: ci-prepare start lint test-docker
 	@date
