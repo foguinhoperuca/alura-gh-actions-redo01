@@ -36,6 +36,12 @@ build:
 	go build .
 	@date
 
+build-main:
+	@clear
+	@date
+	go build main.go
+	@date
+
 test:
 	@clear
 	@date
